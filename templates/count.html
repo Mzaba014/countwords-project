@@ -1,0 +1,11 @@
+<h1> This is the count page </h1>
+<br />
+<a href="{% url 'home' %}"> Click here to analyze another text </a>
+<p> User's text: {{ usertext|linebreaks }} </p>
+<p> The user text contains {{ word_count }} words </p>
+
+<p> Here are the most common words in your text: </p>
+{% for word, count in most_common %}
+'{{ word }}' occured {{ count }} times
+<br />
+{% endfor %}

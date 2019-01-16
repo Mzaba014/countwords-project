@@ -1,0 +1,9 @@
+<h1> Welcome to the Word Counter home page </h1>
+<a href="{% url 'about' %}"> Click here to go to the about page </a>
+<br />
+
+<form action="{% url 'count' %}">
+  <textarea cols='40' rows='5' name='usertext'></textarea>
+  <br />
+  <input type="submit" value="Submit Text" />
+</form>
